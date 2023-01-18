@@ -1,0 +1,227 @@
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+    background-color: white;
+    font-family: 'Playfair Display', 'sans-serif'
+} 
+
+/* header */
+
+header {
+    display: flex;
+    background-color: #8CADDF;
+    width: 95%;
+    text-align: left;
+    border: white solid 2px;
+    padding: 6% 0 0 5%;
+}
+
+.header-text {
+    display: inline;
+}
+
+.title {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.text {
+    margin-top: 5px;
+    color: white;
+}
+
+.logo {
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    margin-left: 10px;
+}
+
+/* products */
+
+.product {
+    display: flex;
+    color: black;
+    border-bottom: #8CADDF solid 1px;
+    padding-bottom: 10px;
+}
+
+.product-details {
+    text-align: left;  
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.item-name {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.icon {
+    padding: 5px 20px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.add-btn {
+    margin: auto 7% auto auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #8CADDF;
+    border: #8CADDF solid 1.5px;
+    background-color: white
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    background-color: #8CADDF;
+    color: white;
+    font-weight: 500;
+}
+
+
+/* order details */
+
+.order-items {
+    border-bottom: black solid 1.5px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    height: 40px;
+    padding: 0;
+}
+
+.item-remove-container {
+    display: flex;
+    float: left
+}
+
+.item-price-container {
+    display: flex;
+    justify-content: right;
+}
+
+
+.remove-btn {
+    font-family: 'Playfair Display', 'sans-serif';
+    border: none;
+    background-color: transparent;
+    font-size: 10px;
+    color: grey;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between
+}
+
+.complete-btn {
+    width: 100%;
+    background-color: #8CADDF;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Playfair Display', 'sans-serif';
+    font-weight: 500;
+    border: #8CADDF solid 2px;
+}
+
+.complete-btn:hover {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    color: #8CADDF;
+    border: #8CADDF solid 2px;
+}
+
+
+/* payment modal */
+
+.payment-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 70%;
+    width: 80%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 500px 1px black;
+    background-color: white;
+    color: black;
+}
+
+.modal-inner {
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    margin: 15px 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.pay-btn {
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #8CADDF;
+    color: white;
+    padding: 0px 0;
+    font-size: 16px;
+    font-family: 'Playfair Display', 'sans-serif';
+    font-weight: 500;
+    border: none;
+}
+.pay-btn:hover {
+    cursor: pointer;
+    color: #8CADDF;
+    background-color: white;
+    border: #8CADDF solid 2px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: red;
+    float: right;
+    margin-right: 20px;
+}
+.close-btn:hover {
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.hidden {
+    display: none;
+}

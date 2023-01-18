@@ -1,0 +1,54 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+        <title>Flower Boutique</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-text">
+                <h4 class="title text">Flower Boutique</h4>
+                <h6 class="text">The most beautiful bouquets in town!</h6>
+            </div>
+            <div class="logo-container">
+                <img class="logo" src="https://icon-library.com/images/white-flower-icon/white-flower-icon-19.jpg">
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="products-container" id="products-container">
+                    <!-- products here -->
+                </div>
+                <div class="order-container hidden" id="order-container">
+                    <h3 style="color: #8CADDF">Your Order</h3>
+                    <div class="order-items" id="order-items">
+                        <!-- ordered items here -->
+                    </div>
+                    <div class="checkout-container">
+                        <h4>Checkout:</h4>
+                        <p class="total-price" id="total-price"></p>
+                    </div>
+                    <button class="complete-btn" id="complete-btn">Complete order</button>
+                </div>
+            </section>
+            <section>
+                <div class="payment-modal hidden" id="payment-modal">
+                    <div class="modal-inner">
+                        <h3>Enter card details</h3>
+                        <form class="payment-form" id="payment-form">
+                            <input placeholder="Enter your name" type="text" pattern="[A-Za-z]+ [A-Za-z]+" required>
+                            <input placeholder="Enter your card number" type="text" required>
+                            <input placeholder="Enter CVV [3 digits]" type="text" pattern="\d{3}" required>
+                            <input type="submit" value="Pay" class="pay-btn" id="pay-btn">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
